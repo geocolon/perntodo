@@ -78,7 +78,7 @@ app.delete('/todos/:id', async (req, res) => {
 
 
 app.listen(PORT, () => {
-  console.log('Server is running on port 6000');
+  console.log(`Server is running on port http://localhost:${PORT}`);
 }).on('error', (err) => {
     if (err.code === 'EADDRINUSE') {
       console.log(`Port ${PORT} is already in use`);
